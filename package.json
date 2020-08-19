@@ -1,0 +1,23 @@
+{
+  "name": "nodejs_blog",
+  "version": "1.0.0",
+  "description": "Learn Node.js by creating a blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srooland95/NodeJS_Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srooland95/NodeJS_Blog/issues"
+  },
+  "homepage": "https://github.com/srooland95/NodeJS_Blog#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
