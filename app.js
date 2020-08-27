@@ -1,7 +1,12 @@
 const express = require('express');
+const morgan = require('morgan');
+const mongoose = require('mongoose');
+
+// express app
 const app = express();
 
-const morgan = require('morgan');
+const dbURI = 'mongodb+srv://srooland95:Slash1014@learn-sandbox.hbwgw.mongodb.net/<dbname>?retryWrites=true&w=majority';
+mongoose.connect(dbURI);
 
 // listen for request
 app.listen(3000);
