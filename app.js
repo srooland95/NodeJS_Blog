@@ -22,11 +22,11 @@ app.use(morgan('dev'));
 //  get views
 app.get('/', (req, res) => {
   res.redirect('/blogs');
-})
+});
 
 app.get('/about', (req,res) => {
   res.render('about', { title: 'About'});
-})
+});
 
 // blog routes
 app.get('/blogs', (req, res) => {
@@ -41,9 +41,9 @@ app.get('/blogs', (req, res) => {
 
 app.get('/blog/create', (req, res) => {
   res.render('create', { title: 'Create blog'});
-})
+});
 
 // 404 error
 app.use((req, res) => {
   res.status(404).render('404', { title: '404'});
-})
+});
